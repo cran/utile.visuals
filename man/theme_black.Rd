@@ -2,7 +2,7 @@
 % Please edit documentation in R/themes.R
 \name{theme_black}
 \alias{theme_black}
-\title{theme_black}
+\title{Minimalist black theme for ggplot2}
 \usage{
 theme_black(base_size = 11, base_family = "",
   base_line_size = base_size/22, base_rect_size = base_size/22)
@@ -19,7 +19,7 @@ Defaults to base_size/22.}
 Defaults to base_size/22.}
 }
 \description{
-Minimalist ggplot2 theme which removes most background
+A ggplot2 theme which removes most background
 elements and makes all text/lines black.
 }
 \note{

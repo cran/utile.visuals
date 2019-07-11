@@ -2,7 +2,7 @@
 % Please edit documentation in R/geoms.R
 \name{geom_stepconfint}
 \alias{geom_stepconfint}
-\title{geom_stepconfint}
+\title{Step function confidence intervals for ggplot2}
 \usage{
 geom_stepconfint(mapping = NULL, data = NULL, stat = "identity",
   position = "identity", na.rm = FALSE, ...)

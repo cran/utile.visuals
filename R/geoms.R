@@ -1,4 +1,4 @@
-#' @title geom_stepconfint
+#' @title Step function confidence intervals for ggplot2
 #' @description Produces a step function confidence interval for survival curves. Essentially
 #' the geom_step() for confidence intervals which ggplot2 elects not to provide.
 #' @param mapping Aesthetic mappings with aes() function. Like geom_ribbon(), you must provide
