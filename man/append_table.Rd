@@ -5,8 +5,8 @@
 \title{Append a ggplot2 table to the bottom of a ggplot2 plot}
 \usage{
 append_table(plot = NULL, table = NULL, plot.height = 1,
-  table.height = 0.1, plot.width = 1, legend.width = 0.2,
-  legend.offset = -15)
+  table.height = 0.1, plot.width = 1, extract.legend = TRUE,
+  legend.width = 0.2, legend.offset = -15)
 }
 \arguments{
 \item{plot}{Required. ggplot2::ggplot() object. If a legend is present, it will be
@@ -24,11 +24,16 @@ to 0.1.}
 \item{plot.width}{Optional. Numeric. Width of plot relative to legend. Ignored
 if no legend present in plot. Defaults to 1.}
 
+\item{extract.legend}{Optional. Logical. Indicates whether to extract the legend
+from the plot and reinsert it adjacent to the final combined plot. May be undesired
+if legend already embedded within the plot area. Defaults to TRUE.}
+
 \item{legend.width}{Optional. Numeric. Width of legend relative to plot. Ignored
-if no legend present in plot. Defaults 0.2.}
+if no legend present in plot or 'extract.legend'=FALSE. Defaults 0.2.}
 
 \item{legend.offset}{Optional. Numeric. Vertical offset of legend. Used to raise
-or lower. Ignored if no legend present in plot. Defaults to -15.}
+or lower. Ignored if no legend present in plot or 'extract.legend'=FALSE. Defaults
+to -15.}
 }
 \value{
 A ggplot2 tableGrob object. Use grid::grid.draw() to open in RStudio viewer.
