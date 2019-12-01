@@ -1,3 +1,9 @@
+# utile.visuals 0.2.3
+* Added parameter to `ggrisktable()` to allow preemptive specification of text color.
+
+# utile.visuals 0.2.2
+* Fixed inconsistency within `theme_white()`.
+
 # utile.visuals 0.2.1
 * `append_table()`: Legend extraction can now be toggled with the new `extract.legend` option. Extraction may not be a desired behavior if the legend is already embedded within plot area.
 * `ggrisktable()`:
