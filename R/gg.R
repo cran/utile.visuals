@@ -21,12 +21,12 @@ utils::globalVariables(c('time', 'strata', 'n.risk'))
 #'    fit = fit,
 #'    times = c(0, 10, 20, 30, 40, 50),
 #'    strata.order = c('0', '1')
-#' ) + theme_risk_black()
+#' ) + theme_risk()
 #' @export
 ggrisktable <- function (fit = NULL, times = NULL, text.color = 'black', strata.order = NULL) {
 
   # Hard stops
-  if (is.null(fit) | class(fit) != 'survfit') stop('No valid fit object provided. [Check: \'fit\']')
+  if (is.null(fit) | !('survfit' %in% class(fit))) stop('No valid fit object provided. [Check: \'fit\']')
   if (is.null(times) | !is.numeric(times)) stop('No valid time points provided. [Check: \'times\']')
   if (!is.null(strata.order) & !is.character(strata.order)) stop('Invalid strata order data provided. [Check: \'strata.order\']')
 
