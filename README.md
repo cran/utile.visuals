@@ -3,18 +3,17 @@
 [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/utile.visuals)](https://CRAN.R-project.org/package=utile.visuals)
 
 ## Overview
-A small set of functions for making visuals with ggplot2. Includes minimalist themes with transparent backgrounds and a suite of tools for creating survival curves with risk tables.
+A set of themes and functions for making visuals with ggplot2.
 
-## Functions
-### > gg
-- `ggrisktable()`: A simple wrapper function which calculates the numbers at risk for a survival model and a given set of time points then creates a ggplot2 table with them.
+### Survival Curves
+- `ggrisktable()`: Creates a ggplot2 risk table for a `survival::survfit` object.
+- `geom_stepconfint()`: Produces a step function confidence interval for plotted 
+survival curves.
 
-### > geom_
-- `geom_stepconfint()`: Produces a step function confidence interval for survival curves. Essentially the `ggplot2::geom_step()` for confidence intervals which ggplot2 elects not to provide.
-
-### > theme_
+### Themes
 - `theme_basic()`: A ggplot2 theme for plots which removes most background elements.
 - `theme_risk()`: A ggplot2 theme for risk tables which removes most background elements.
+- `panel_border()`: Replace the axes of a ggplot2 plot with a bordered panel. 
 
-### > append_
-- `append_table()`: Aligns axes and combines a ggplot2 plot and table into a single plot. Can handle legends.
+### Miscellaneous
+- `append_table()`: Combines and aligns a ggplot2 plot and table into a single plot.
